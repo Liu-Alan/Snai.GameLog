@@ -26,7 +26,7 @@ func main() {
 	for s.Scan() {
 		sc := s.Text()
 
-		if strings.Contains(sc, "用户上报") && strings.Contains(sc, "\"appid\":\"326xqzwgqnpd85lo\"") && strings.Contains(sc, "\"eventtype\":\"levelup\"") {
+		if strings.Contains(sc, "用户上报") && strings.Contains(sc, "\"appid\":\"326xqzwg\"") && strings.Contains(sc, "\"eventtype\":\"levelup\"") {
 			if strings.Contains(sc, "\"openid\":\"") {
 				idindex := strings.Index(sc, "\"openid\":\"") + 10
 				openid := sc[idindex : idindex+12]
@@ -36,7 +36,7 @@ func main() {
 			}
 		}
 
-		if strings.Contains(sc, "用户上报") && strings.Contains(sc, "\"appid\":\"326xqzwgqnpd85lo\"") && strings.Contains(sc, "\"eventtype\":\"entersvr\"") {
+		if strings.Contains(sc, "用户上报") && strings.Contains(sc, "\"appid\":\"326xqzwg\"") && strings.Contains(sc, "\"eventtype\":\"entersvr\"") {
 			if strings.Contains(sc, "\"openid\":\"") {
 				idindex := strings.Index(sc, "\"openid\":\"") + 10
 				openid := sc[idindex : idindex+12]
